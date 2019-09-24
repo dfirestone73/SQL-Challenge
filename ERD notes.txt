@@ -1,7 +1,7 @@
 departments
 -
-ID INTEGER PK
-dept_no VARCHAR
+ID INTEGER 
+dept_no VARCHAR PK
 dept_name VARCHAR
 
 dept_emp
@@ -22,8 +22,8 @@ to_date DATE
 
 employees
 -
-ID INTEGER PK
-emp_no INT 
+ID INTEGER 
+emp_no INT PK
 birth_date DATE
 first_name VARCHAR
 last_name VARCHAR

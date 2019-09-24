@@ -81,20 +81,6 @@ ALTER TABLE "SQLChallenge"."employees" ADD ID SERIAL NOT NULL;
 ALTER TABLE "SQLChallenge"."salaries" ADD ID SERIAL PRIMARY KEY;
 ALTER TABLE "SQLChallenge"."titles" ADD ID SERIAL PRIMARY KEY;
 
-SELECT * FROM "SQLChallenge"."employees";
-
---1.
-CREATE VIEW employeeVW AS
-SELECT e.emp_no, e.first_name, e.last_name, e.gender, s.salary FROM "SQLChallenge"."employees" AS e
-JOIN "SQLChallenge"."salaries" AS s ON e.emp_no=s.emp_no;
-
-SELECT * FROM employeeVW;
-
---2.
-SELECT e.first_name, e.last_name, e.hire_date FROM "SQLChallenge"."employees" AS e
-WHERE e.hire_date >= '1987-01-01' AND e.hire_date <= '1987-12-31';
-
---3.
 
 
 
